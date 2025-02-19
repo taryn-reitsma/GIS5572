@@ -6,7 +6,7 @@ app = Flask(__name__) # setup initial flask app; gets called throughout in route
 
 #change to run
 conn_params = {
-        "host":"35.202.29.226",
+        "host":"db_IP",
         "database": "lab1-2",
         "user":"user",
         "password":"password",
