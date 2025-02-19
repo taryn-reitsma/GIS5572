@@ -13,28 +13,6 @@ conn_params = {
         "port": "5432"
 }
 
-'''
-Python decorateors point to a function
-Here, it specifies the app route '/'.
-It sends basic text from the hello() function
-back as a response. This is what you
-see in your web browser when you type in
-x.x.x.x:5000/
-
-Note: the / in the above path references the '/'
-in the @app.route('/') designation.
-
-For more on decorators, Google "decorators in python".
-'''
-@app.route('/') #python decorator 
-def hello_world(): #function that app.route decorator references
-  response = hello()
-  return response
-
-def hello():
-  return "hello, world"
-
-
 
 # New route
 @app.route('/polygon', methods=['GET'])
